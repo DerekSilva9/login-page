@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="login-area">
+      <div class="login">
+        <div>
+          <img src="https://freesvg.org/storage/img/thumb/1696251420Rhino2b.png" alt="">
+        </div>
+        <form method="post">
+          <input type="email" name="usuario" placeholder="Usuario" autofocus>
+          <input type="password" name="senha" placeholder="Senha">
+          <input type="submit" value="Entrar" onclick="logar(); return false">
+        </form>
+        <p>Ainda não tem uma conta? <a href="">Faça seu cadastro</a></p>
+      </div>
+    </section>
+    <script>
+        function logar() {
+    var login = document.querySelector('input[name="usuario"]').value;
+    var senha = document.querySelector('input[name="senha"]').value;
+  
+    if (login === "admin@admin" && senha === "admin") {
+      alert("Sucesso");
+      // Redirecionar para a página desejada após o login
+      window.location.href = "home.html";
+    } else {
+      alert("No");
+    }
+  }
+    </script>
+</body>
+</html>
