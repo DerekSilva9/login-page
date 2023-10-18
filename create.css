@@ -7,31 +7,31 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(204, 204, 204);
 }
-.login-area{
+.create-area{
     display: flex;
     height: 100vh;
     justify-content: center;
     align-items: center;
 
 }
-.login{
+.create{
     display: flex;
     flex-direction: column;
     align-items: center;
     color: rgb(223, 211, 211);
     background-color: rgb(21, 20, 26);
-    height: 355px;
+    height: 415px;
     width: 320px;
     border-radius:20px;
     padding: 20px;
     border-style: solid;
     border-color: purple;
 }
-.login form{
+.create form{
     display: flex;
     flex-direction: column;
 }
-.login input{
+.create input{
     display: flex;
     background-color: rgb(36, 18, 37);
     color: rgb(223, 211, 211);
@@ -45,18 +45,19 @@ body{
     border-radius: 10px;
     outline: none;
 }
-.login img{
+.create img{
     height: auto;
     width: 80px;
-}
-input::placeholder{
-    color: rgb(223, 211, 211);
 }
 form [type="submit"]{
     background-color: blueviolet;
     height: 40px;
     margin-top: 30px;
     cursor: pointer;
+}
+input::placeholder{
+    text-align: center;
+    color: rgb(223, 211, 211);
 }
 p a{
     text-decoration: none;
